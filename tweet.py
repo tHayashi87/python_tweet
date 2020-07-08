@@ -1,6 +1,7 @@
 import tweepy
 import json
 
+
 # json読み込み
 with open("../twitter_config.json") as twi_config:
     conf = json.load(twi_config)
@@ -17,10 +18,12 @@ twi_api = tweepy.API(auth)
 
 # Tweet
 twi = """
-\n
-お昼です。
+お昼の時間です🍽
 \n
 今日のお昼ご飯は何でしょうか？
 ψ(｀∇´)ψ
+
+#python
 """
 twi_api.update_status(twi)
+
